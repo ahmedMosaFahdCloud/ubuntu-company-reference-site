@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مراقبة المساحة والرام | Ubuntu Server Company Reference</title>
+  <meta name="description" content="مرجع داخلي لتجهيز Ubuntu Server المحلي في الشركة" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <span class="brand-icon"><i class="bi bi-hdd-rack"></i></span>
+      <span><h1>Ubuntu Server Docs</h1><p>مرجع الشركة الداخلي</p></span>
+    </a>
+    <div class="search-box"><i class="bi bi-search"></i><input id="navSearch" placeholder="بحث في الفصول..." /></div>
+    <nav><div class="nav-group"><p class="nav-group-title">البداية</p>
+<a class="nav-link" href="index.html"><i class="bi bi-diagram-3"></i><span>Overview / الخريطة العامة</span></a>
+<a class="nav-link" href="requirements.html"><i class="bi bi-list-check"></i><span>المتطلبات</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">الشبكة</p>
+<a class="nav-link" href="network-basics.html"><i class="bi bi-router"></i><span>Network Basics</span></a>
+<a class="nav-link" href="static-ip.html"><i class="bi bi-hdd-network"></i><span>Static IP</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">التثبيت والـ BIOS</p>
+<a class="nav-link" href="bios-setup.html"><i class="bi bi-motherboard"></i><span>BIOS Setup</span></a>
+<a class="nav-link" href="install-ubuntu.html"><i class="bi bi-usb-drive"></i><span>تثبيت Ubuntu Server</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Linux Access</p>
+<a class="nav-link" href="first-commands.html"><i class="bi bi-terminal"></i><span>First Commands</span></a>
+<a class="nav-link" href="ssh.html"><i class="bi bi-key"></i><span>SSH</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">الأمان</p>
+<a class="nav-link" href="firewall.html"><i class="bi bi-shield-lock"></i><span>Firewall</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">الخدمات</p>
+<a class="nav-link" href="cockpit.html"><i class="bi bi-speedometer2"></i><span>Cockpit</span></a>
+<a class="nav-link" href="coolify.html"><i class="bi bi-rocket-takeoff"></i><span>Coolify</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Power & WOL</p>
+<a class="nav-link" href="wake-on-lan.html"><i class="bi bi-lightning-charge"></i><span>Wake-on-LAN</span></a>
+<a class="nav-link" href="wol-systemd.html"><i class="bi bi-gear-wide-connected"></i><span>WOL Systemd Service</span></a>
+<a class="nav-link" href="wolow-companion.html"><i class="bi bi-phone"></i><span>Wolow Companion</span></a>
+<a class="nav-link" href="power-commands.html"><i class="bi bi-power"></i><span>Power Commands</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">الدعم والمراجع</p>
+<a class="nav-link" href="troubleshooting.html"><i class="bi bi-bug"></i><span>Troubleshooting</span></a>
+<a class="nav-link" href="final-checklist.html"><i class="bi bi-ui-checks-grid"></i><span>Final Checklist</span></a>
+<a class="nav-link" href="ports-reference.html"><i class="bi bi-ethernet"></i><span>Ports Reference</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Advanced Optional</p>
+<a class="nav-link" href="hostname.html"><i class="bi bi-pc-display-horizontal"></i><span>إعداد Hostname للسيرفر</span></a>
+<a class="nav-link" href="timezone.html"><i class="bi bi-clock-history"></i><span>تغيير Timezone</span></a>
+<a class="nav-link" href="auto-updates.html"><i class="bi bi-arrow-repeat"></i><span>تحديث النظام تلقائي</span></a>
+<a class="nav-link" href="monitoring.html"><i class="bi bi-activity"></i><span>مراقبة المساحة والرام</span></a>
+<a class="nav-link" href="docker-commands.html"><i class="bi bi-box"></i><span>أوامر Docker الأساسية</span></a>
+<a class="nav-link" href="backup.html"><i class="bi bi-cloud-arrow-up"></i><span>Backup بسيط</span></a>
+<a class="nav-link" href="local-dns.html"><i class="bi bi-signpost-split"></i><span>Local DNS names بدل IP</span></a>
+<a class="nav-link" href="dhcp-reservation.html"><i class="bi bi-router-fill"></i><span>DHCP Reservation من الراوتر</span></a>
+</div></nav>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <div class="crumbs"><i class="bi bi-activity"></i> مراقبة المساحة والرام <span>— Health Checks</span></div>
+      <div class="top-actions"><button class="icon-btn mobile-toggle" data-menu><i class="bi bi-list"></i> القائمة</button><button class="icon-btn" data-print><i class="bi bi-printer"></i> طباعة</button></div>
+    </div>
+    
+<section class="hero"><span class="eyebrow"><i class="bi bi-activity"></i> Monitoring</span><h1>مراقبة المساحة والرام</h1><p>أوامر سريعة لمتابعة صحة السيرفر ومعرفة سبب البطء أو امتلاء الهارد.</p></section>
+<section class="doc-card"><h2>CPU/RAM/Load</h2><div class="code-card" data-lang="bash">
+  <div class="code-toolbar"><span><i class="bi bi-code-slash"></i>bash</span><button class="copy-btn" type="button"><i class="bi bi-clipboard"></i> نسخ</button></div>
+  <pre><code>htop
+free -h
+uptime
+ps aux --sort=-%mem | head
+ps aux --sort=-%cpu | head</code></pre>
+</div></section>
+<section class="doc-card"><h2>Disk Usage</h2><div class="code-card" data-lang="bash">
+  <div class="code-toolbar"><span><i class="bi bi-code-slash"></i>bash</span><button class="copy-btn" type="button"><i class="bi bi-clipboard"></i> نسخ</button></div>
+  <pre><code>df -h
+lsblk
+sudo du -h --max-depth=1 /var | sort -h
+sudo ncdu /</code></pre>
+</div></section>
+<section class="doc-card"><h2>Logs</h2><div class="code-card" data-lang="bash">
+  <div class="code-toolbar"><span><i class="bi bi-code-slash"></i>bash</span><button class="copy-btn" type="button"><i class="bi bi-clipboard"></i> نسخ</button></div>
+  <pre><code>journalctl -xe
+journalctl -u ssh --since &quot;1 hour ago&quot;
+dmesg -T | tail -50</code></pre>
+</div></section>
+
+    <footer class="footer">Ubuntu Server Company Reference · Local Server · SSH · UFW · Cockpit · WOL · Coolify</footer>
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
