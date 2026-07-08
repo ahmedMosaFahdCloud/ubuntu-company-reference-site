@@ -1,25 +1,38 @@
 # Ubuntu Server Company Reference Site
 
-مشروع ويب ثابت متعدد الصفحات لمرجع تجهيز Ubuntu Server المحلي داخل الشركة.
+A static multi-page reference website for documenting how to prepare and configure a local Ubuntu Server inside a company environment.
 
-## التشغيل
-افتح `index.html` مباشرة في المتصفح، أو ارفع الفولدر على أي static hosting / IIS / Nginx.
+The project explains the basic steps needed to set up an Ubuntu Server, including installation, network configuration, SSH access, firewall setup, Cockpit, Wake-on-LAN, Coolify, and common troubleshooting notes.
 
-## الصفحات
-- Overview
-- Requirements
-- Network Basics
-- BIOS Setup
-- Ubuntu Installation
-- Static IP
-- SSH
-- Firewall
-- Cockpit
-- Wake-on-LAN
-- Wolow Companion
-- Coolify
-- Troubleshooting
-- Advanced optional topics
+## Live Preview
 
-## الملاحظات
-يعتمد على Bootstrap Icons وGoogle Fonts من CDN. لو هتشغله Offline بالكامل، نزّل الخطوط والأيقونات محلياً وعدّل الروابط.
+https://ahmedmosafahdcloud.github.io/ubuntu-company-reference-site
+
+## How to Run
+
+Open `index.html` directly in the browser.
+
+You can also upload the project folder to any static hosting service, IIS, Nginx, or Apache server.
+
+## Pages
+
+* Overview
+* Requirements
+* Network Basics
+* BIOS Setup
+* Ubuntu Installation
+* Static IP
+* SSH
+* Firewall
+* Cockpit
+* Wake-on-LAN
+* Wolow Companion
+* Coolify
+* Troubleshooting
+* Advanced Optional Topics
+
+## Notes
+
+The project uses Bootstrap Icons and Google Fonts from CDN.
+
+For full offline usage, download the fonts and icons locally and update the links.
